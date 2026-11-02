@@ -221,13 +221,13 @@ const SEED_DIAS = [
   {
     d: "2026-10-09",
     tipo: "treino",
-    titulo: "Treino normal + estrutura do FLL Discover",
-    foco: "Robô andando e o Torneio FLL Discover saindo do papel.",
+    titulo: "Treino normal + estrutura do FLL Explorer",
+    foco: "Robô andando e o Torneio FLL Explorer saindo do papel.",
     avisos: ["Último dia do hackathon do Siará."],
     tarefas: [
       T(
         "deolho",
-        "Estruturar o Torneio FLL Discover: formato, número de equipes, datas dos treinos das crianças, regras e avaliação",
+        "Estruturar o Torneio FLL Explorer: formato, número de equipes, datas dos treinos das crianças, regras e avaliação",
         ["Cacau", "Maria Clara", "Ana Clara", "Nobre"],
         ["Maria Melissa", "Duda", "Emanuel"],
         "Documento de 1 página do projeto",
@@ -677,7 +677,7 @@ const SEED_DIAS = [
       ),
       T(
         "deolho",
-        "Começar a impressão das peças em ABS do Torneio FLL Discover, separadas por equipe",
+        "Começar a impressão das peças em ABS do Torneio FLL Explorer, separadas por equipe",
         ["Nobre"],
         ["Gonçalves"],
         "Plano de impressão das peças",
@@ -727,7 +727,7 @@ const SEED_DIAS = [
     tarefas: [
       T(
         "deolho",
-        "Treino 1 do FLL Discover com as equipes do 4º ano, na sala de robótica",
+        "Treino 1 do FLL Explorer com as equipes do 4º ano, na sala de robótica",
         ["Maria Clara", "Ana Clara"],
         ["Duda", "Professor do 4º ano"],
         "Lista de presença por equipe",
@@ -782,7 +782,7 @@ const SEED_DIAS = [
       ),
       T(
         "marca",
-        "Arte dos certificados do Torneio FLL Discover",
+        "Arte dos certificados do Torneio FLL Explorer",
         ["Ana Clara"],
         [],
         "Arte pronta para imprimir",
@@ -816,7 +816,7 @@ const SEED_DIAS = [
     d: "2026-11-03",
     tipo: "treino",
     titulo: "Semana do torneio",
-    foco: "Começa a reta final do Torneio FLL Discover.",
+    foco: "Começa a reta final do Torneio FLL Explorer.",
     avisos: ["Confirmar com a equipe."],
     tarefas: [
       T(
@@ -828,7 +828,7 @@ const SEED_DIAS = [
       ),
       T(
         "marca",
-        "Post de convite do Torneio FLL Discover",
+        "Post de convite do Torneio FLL Explorer",
         ["Maria Clara"],
         ["Ana Clara"],
         "Post no ar",
@@ -861,7 +861,7 @@ const SEED_DIAS = [
     tarefas: [
       T(
         "deolho",
-        "Treino 2 do FLL Discover: simulado com as regras do torneio",
+        "Treino 2 do FLL Explorer: simulado com as regras do torneio",
         ["Maria Clara", "Ana Clara"],
         ["Duda", "Professor do 4º ano"],
         "Equipes prontas para sábado",
@@ -948,7 +948,7 @@ const SEED_DIAS = [
   {
     d: "2026-11-07",
     tipo: "evento",
-    titulo: "Torneio FLL Discover",
+    titulo: "Torneio FLL Explorer",
     foco: "Competição das equipes do 4º ano na sala de robótica do Fundamental 1, com avaliação dos monitores da escola.",
     presenca: [
       { r: "Equipe", n: [...SEED_COMPETIDORES] },
@@ -2272,7 +2272,7 @@ function updateCounters() {
   const eventos = DIAS.filter((x) => x.tipo === "evento").sort((a, b) =>
     a.d < b.d ? -1 : 1,
   );
-  const fll = eventos.find((x) => /FLL|Discover/i.test(x.titulo));
+  const fll = eventos.find((x) => /FLL|Explorer/i.test(x.titulo));
   const reg = eventos.find((x) => /Regional/i.test(x.titulo));
   if (fll) contagem("#c-fll", fll.d);
   if (reg) contagem("#c-reg", reg.d);
